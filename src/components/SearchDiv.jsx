@@ -8,4 +8,4 @@ function SearchDiv() {
   )
 }
 
-export default SearchDiv
+export default SearchDiv;

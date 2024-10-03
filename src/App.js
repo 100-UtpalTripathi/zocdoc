@@ -9,13 +9,13 @@ import Signup from "./components/Signup";
 function App() {
   return (
     <>
-      <LandingPage />
       <Routes>
-        <Route path="/browse" element={<h1>Browse</h1>} />
-        <Route path="/help" element={<h1>Help</h1>} />
-        <Route path="/list-practice" element={<h1>List your practice</h1>} />
-        <Route path="/login" element={<h1>Login</h1>} />
-        <Route path="/signup" element={<h1>Signup</h1>} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/browse" element={<Browse/>} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/list-practice" element={<ListPractice />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
 
     </>

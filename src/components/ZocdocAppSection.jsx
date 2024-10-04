@@ -32,7 +32,7 @@ function ZocdocAppSection() {
         <img 
           src={hand}
           alt="QR Code" 
-          className="absolute top-0 right-0 w-60 h-80 md:w-40 md:h-40 m-4"
+          className="absolute top-0 right-0 w-80 h-80 m-4"
         />
       </div>
     </div>

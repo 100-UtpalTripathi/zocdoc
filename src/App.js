@@ -8,6 +8,12 @@ import Signup from "./components/Signup";
 import Insurance from "./components/Insurance";
 import TopSearchedSpecialities from "./components/TopSearchedSpecialities";
 import Services from "./components/Services";
+import Partners from "./components/Partners";
+import Jobs from "./components/Jobs";
+import ZocdocAppSection from "./components/ZocdocAppSection";
+
+
+import ProviderService from "./components/ProviderService";
 
 function App() {
   return (
@@ -15,9 +21,13 @@ function App() {
       <LandingPage />
       <Insurance />
       
-      <TopSearchedSpecialities />
+      <TopSearchedSpecialities/>
 
       <Services />
+      <ZocdocAppSection />
+      <ProviderService />
+      <Partners />
+      <Jobs />
       <Routes>
         
         <Route path="/browse" element={<Browse/>} />

@@ -1,0 +1,139 @@
+{
+    "cities": [
+      {
+        "id": 1,
+        "name": "New York City"
+      },
+      {
+        "id": 2,
+        "name": "Brooklyn"
+      },
+      {
+        "id": 3,
+        "name": "Queens"
+      },
+      {
+        "id": 4,
+        "name": "Bronx"
+      },
+      {
+        "id": 5,
+        "name": "Long Island"
+      },
+      {
+        "id": 6,
+        "name": "Baltimore"
+      },
+      {
+        "id": 7,
+        "name": "Washington, DC"
+      },
+      {
+        "id": 8,
+        "name": "Seattle"
+      },
+      {
+        "id": 9,
+        "name": "Atlanta"
+      },
+      {
+        "id": 10,
+        "name": "Denver"
+      },
+      {
+        "id": 11,
+        "name": "Philadelphia"
+      },
+      {
+        "id": 12,
+        "name": "Houston"
+      },
+      {
+        "id": 13,
+        "name": "Dallas"
+      },
+      {
+        "id": 14,
+        "name": "Austin"
+      },
+      {
+        "id": 15,
+        "name": "Chicago"
+      },
+      {
+        "id": 16,
+        "name": "Boston"
+      },
+      {
+        "id": 17,
+        "name": "San Francisco"
+      },
+      {
+        "id": 18,
+        "name": "Miami"
+      },
+      {
+        "id": 19,
+        "name": "Los Angeles"
+      },
+      {
+        "id": 20,
+        "name": "San Diego"
+      }
+    ],
+    "specialties": [
+      {
+        "id": 1,
+        "name": "Doctors"
+      },
+      {
+        "id": 2,
+        "name": "Dentists"
+      },
+      {
+        "id": 3,
+        "name": "Pediatric Dentists"
+      },
+      {
+        "id": 4,
+        "name": "Pediatricians"
+      },
+      {
+        "id": 5,
+        "name": "Dermatologists"
+      },
+      {
+        "id": 6,
+        "name": "OB-GYNs"
+      },
+      {
+        "id": 7,
+        "name": "Psychiatrists"
+      },
+      {
+        "id": 8,
+        "name": "Therapists"
+      },
+      {
+        "id": 9,
+        "name": "Eye Doctors"
+      },
+      {
+        "id": 10,
+        "name": "ENT Doctors"
+      },
+      {
+        "id": 11,
+        "name": "Urgent Care"
+      },
+      {
+        "id": 12,
+        "name": "Medicare"
+      },
+      {
+        "id": 13,
+        "name": "Hospitals"
+      }
+    ]
+  }
+  

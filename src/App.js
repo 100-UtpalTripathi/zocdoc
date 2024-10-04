@@ -11,6 +11,7 @@ import Services from "./components/Services";
 import Partners from "./components/Partners";
 import Jobs from "./components/Jobs";
 import ZocdocAppSection from "./components/ZocdocAppSection";
+import SpecialitiesInCities from "./components/SpecialitiesInCities";
 
 
 import ProviderService from "./components/ProviderService";
@@ -28,6 +29,7 @@ function App() {
       <ProviderService />
       <Partners />
       <Jobs />
+      <SpecialitiesInCities />
       <Routes>
         
         <Route path="/browse" element={<Browse/>} />

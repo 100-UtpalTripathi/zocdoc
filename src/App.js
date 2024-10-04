@@ -5,12 +5,17 @@ import Help from "./components/Help";
 import ListPractice from "./components/ListPractice";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Insurance from "./components/Insurance";
+import TopSearchedSpecialities from "./components/TopSearchedSpecialities";
 
 function App() {
   return (
     <>
+      <LandingPage />
+      <Insurance />
+      <TopSearchedSpecialities />
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        
         <Route path="/browse" element={<Browse/>} />
         <Route path="/help" element={<Help />} />
         <Route path="/list-practice" element={<ListPractice />} />

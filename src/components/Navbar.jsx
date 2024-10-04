@@ -29,7 +29,7 @@ function Navbar() {
               List your practice on Zocdoc
             </Link>
           </li>
-          &nbsp;&nbsp; |
+          &nbsp;&nbsp; &nbsp; &nbsp;|
           <li>
             <Link to="/login" className="text-gray-700 hover:text-gray-900">
               Log in &nbsp; <i class="bi bi-chevron-down"></i>

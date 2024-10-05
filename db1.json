@@ -1,0 +1,91 @@
+{
+  "zocdoc": {
+    "heading": "Zocdoc",
+    "menuItems": [
+      "Home",
+      "About us",
+      "Press",
+      "Careers",
+      "Contact us",
+      "Help"
+    ]
+  },
+  "discover": {
+    "heading": "Discover",
+    "menuItems": [
+      "The Paper Gown",
+      "Stories for and about patients",
+      "Practice Resources for providers",
+      "Community Standards",
+      "Data and privacy",
+      "Verified reviews"
+    ]
+  },
+  "insuranceCarriers": {
+    "heading": "Insurance Carriers",
+    "menuItems": [
+      "Aetna",
+      "Aetna Dental",
+      "Ambetter",
+      "Anthem Blue Cross Blue Shield",
+      "Blue Cross Blue Shield",
+      "Blue Cross Blue Shield Dental",
+      "Cigna",
+      "Cigna Dental",
+      "Delta Dental",
+      "Florida Blue Cross Blue Shield",
+      "Humana Dental",
+      "Humana",
+      "Kaiser Permanente",
+      "Metlife",
+      "Multiplan PHCS",
+      "UnitedHealthcare",
+      "UnitedHealthcare Dental",
+      "UnitedHealthcare Oxford"
+    ]
+  },
+  "topSpecialties": {
+    "heading": "Top Specialties",
+    "menuItems": [
+      "Primary Care Doctor",
+      "Urgent Care",
+      "Dermatologist",
+      "OB-GYN",
+      "Dentist",
+      "Psychiatrist",
+      "Ear, Nose & Throat Doctor",
+      "Podiatrist",
+      "Urologist",
+      "Gastroenterologist",
+      "Cardiologist",
+      "Neurologist",
+      "Orthopedic Surgeon",
+      "Ophthalmologist",
+      "Pediatrician",
+      "Optometrist",
+      "Eye Doctor",
+      "Therapist Counselor",
+      "Physical Therapist",
+      "Psychologist"
+    ]
+  },
+  "doctorService": {
+    "heading": "Are you a top doctor or health service?",
+    "menuItems": [
+      "List your practice on Zocdoc",
+      "Become an EHR partner",
+      "Access Zocdoc for Developers",
+      "Learn about Zocdoc Enterprise Solutions"
+    ]
+  },
+  "marketing": {
+    "heading": "Marketing for your practice",
+    "menuItems": [
+      "Dental Marketing",
+      "OB-GYN Marketing",
+      "Dermatology Marketing",
+      "Primary Care Marketing",
+      "Psychiatry Marketing"
+    ]
+  }
+}

@@ -12,33 +12,37 @@ import Partners from "./components/Partners";
 import Jobs from "./components/Jobs";
 import ZocdocAppSection from "./components/ZocdocAppSection";
 import SpecialitiesInCities from "./components/SpecialitiesInCities";
-
+import Footer from "./components/Footer";
 
 import ProviderService from "./components/ProviderService";
 
 function App() {
   return (
     <>
-      <LandingPage />
-      <Insurance />
-      
-      <TopSearchedSpecialities/>
-
-      <Services />
-      <ZocdocAppSection />
-      <ProviderService />
-      <Partners />
-      <Jobs />
-      <SpecialitiesInCities />
       <Routes>
-        
-        <Route path="/browse" element={<Browse/>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <LandingPage />
+              <Insurance />
+              <TopSearchedSpecialities />
+              <Services />
+              <ZocdocAppSection />
+              <ProviderService />
+              <Partners />
+              <SpecialitiesInCities />
+              <Jobs />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/browse" element={<Browse />} />
         <Route path="/help" element={<Help />} />
         <Route path="/list-practice" element={<ListPractice />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
-
     </>
   );
 }

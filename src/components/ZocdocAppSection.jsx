@@ -42,11 +42,11 @@ function ZocdocAppSection() {
         </div>
       </div>
 
-      <div className="w-full md:w-2/3 relative flex justify-center items-center">
+      <div className="w-full md:w-2/3 relative flex justify-center items-center overflow-clip">
         <img
           src={halfCircle}
           alt="Half Circle"
-          className="w-[1400px] h-[1400px] object-contain absolute z-0 -bottom-[500px] -right-20 overflow-hidden"
+          className="w-[1400px] h-[1400px] object-contain absolute z-0 -bottom-[500px] -right-20"
         />
 
         <img

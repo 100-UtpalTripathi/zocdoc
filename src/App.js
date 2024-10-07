@@ -15,6 +15,7 @@ import SpecialitiesInCities from "./components/SpecialitiesInCities";
 import Footer from "./components/Footer";
 
 import ProviderService from "./components/ProviderService";
+import BottomFooter from "./components/BottomFooter";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <SpecialitiesInCities />
               <Jobs />
               <Footer />
+              <BottomFooter />
             </>
           }
         />

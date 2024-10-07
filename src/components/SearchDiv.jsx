@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function SearchDiv() {
-  // Separate states for each input
+
   const [specialties, setSpecialties] = useState([]);
   const [searchTermSpecialty, setSearchTermSpecialty] = useState('');
   const [filteredSpecialties, setFilteredSpecialties] = useState([]);
@@ -13,12 +13,12 @@ function SearchDiv() {
   const [filteredInsurance, setFilteredInsurance] = useState([]);
 
   useEffect(() => {
-    // Fetch specialties (and optionally locations, insurance data if you have them)
+    
     const fetchSpecialties = async () => {
       try {
         const response = await fetch('http://localhost:11000/specialties');
         const data = await response.json();
-        setSpecialties(data.specialties); // Adjust based on your data structure
+        setSpecialties(data.specialties);
       } catch (error) {
         console.error('Error fetching specialties:', error);
       }
@@ -31,6 +31,12 @@ function SearchDiv() {
   const handleSpecialtySearch = (event) => {
     const value = event.target.value;
     setSearchTermSpecialty(value);
+
+    if (value.trim() === "") {
+      setFilteredSpecialties([]); // Clear results if the input is empty
+      return;
+    }
+
     if (specialties.length > 0) {
       const filtered = specialties.filter(specialty =>
         specialty.toLowerCase().includes(value.toLowerCase())
@@ -43,6 +49,12 @@ function SearchDiv() {
   const handleLocationSearch = (event) => {
     const value = event.target.value;
     setLocation(value);
+
+    if (value.trim() === "") {
+      setFilteredSpecialties([]); // Clear results if the input is empty
+      return;
+    }
+
     const locationsList = ["Chennai", "Delhi", "Mumbai", "New York"]; // Example locations
     const filtered = locationsList.filter(loc =>
       loc.toLowerCase().includes(value.toLowerCase())
@@ -54,6 +66,11 @@ function SearchDiv() {
   const handleInsuranceSearch = (event) => {
     const value = event.target.value;
     setInsurance(value);
+
+    if (value.trim() === "") {
+      setFilteredSpecialties([]); // Clear results if the input is empty
+      return;
+    }
     const insuranceList = ["Blue Cross", "United Health", "Aetna", "Cigna"]; // Example insurances
     const filtered = insuranceList.filter(ins =>
       ins.toLowerCase().includes(value.toLowerCase())
@@ -64,7 +81,7 @@ function SearchDiv() {
   return (
     <div className="relative border-2 border-black w-4/5 md:h-16 flex flex-col md:flex-row justify-between items-center p-2 ml-20 mt-12 rounded-md bg-white">
       {/* Specialty Search */}
-      <div className="flex items-center w-full px-4 md:border-r-2 border-b-2 md:border-b-0 relative">
+      <div className="flex flex-row items-center w-full px-4 md:border-r-2 border-b-2 md:border-b-0 relative">
         <span className="mr-2"><i className="bi bi-search"></i></span>
         <input 
           type="text" 
@@ -74,12 +91,12 @@ function SearchDiv() {
           onChange={handleSpecialtySearch}
         />
         {filteredSpecialties.length > 0 && (
-          <div className="absolute z-10 flex flex-col bg-white border mt-48 w-full">
-            <ul className="pl-4 max-h-40 overflow-y-auto">
+          <div className="absolute z-10 bg-white border w-full rounded-md shadow-lg mt-4 top-full">
+            <ul className="pl-2 max-h-60 overflow-y-auto flex flex-col">
               {filteredSpecialties.map((specialty, index) => (
                 <li 
                   key={index} 
-                  className="py-1 hover:bg-yellow-300 cursor-pointer transition-colors"
+                  className="py-1 px-2 hover:bg-yellow-300 cursor-pointer transition-colors"
                 >
                   {specialty}
                 </li>
@@ -88,7 +105,7 @@ function SearchDiv() {
           </div>
         )}
       </div>
-
+  
       {/* Location Search */}
       <div className="flex items-center w-full px-4 md:border-r-2 border-b-2 md:border-b-0 relative">
         <span className="mr-2"><i className="bi bi-geo-alt-fill"></i></span>
@@ -100,12 +117,12 @@ function SearchDiv() {
           onChange={handleLocationSearch}
         />
         {filteredLocations.length > 0 && (
-          <div className="absolute z-10 bg-white border mt-2 w-full rounded-md shadow-lg">
-            <ul className="list-disc pl-4 max-h-40 overflow-y-auto">
+          <div className="absolute z-10 bg-white border w-full rounded-md shadow-lg mt-4 top-full">
+            <ul className="pl-4 max-h-40 overflow-y-auto">
               {filteredLocations.map((loc, index) => (
                 <li 
                   key={index} 
-                  className="py-1 hover:bg-yellow-300 cursor-pointer transition-colors"
+                  className="py-1 px-2 hover:bg-yellow-300 cursor-pointer transition-colors"
                 >
                   {loc}
                 </li>
@@ -114,7 +131,7 @@ function SearchDiv() {
           </div>
         )}
       </div>
-
+  
       {/* Insurance Search */}
       <div className="flex items-center w-full px-4 relative">
         <span className="mr-2"><i className="bi bi-prescription2"></i></span>
@@ -126,12 +143,12 @@ function SearchDiv() {
           onChange={handleInsuranceSearch}
         />
         {filteredInsurance.length > 0 && (
-          <div className="absolute z-10 bg-white border mt-2 w-full rounded-md shadow-lg">
-            <ul className="list-disc pl-4 max-h-40 overflow-y-auto">
+          <div className="absolute z-10 bg-white border w-full rounded-md shadow-lg mt-4 top-full">
+            <ul className="pl-4 max-h-40 overflow-y-auto">
               {filteredInsurance.map((ins, index) => (
                 <li 
                   key={index} 
-                  className="py-1 hover:bg-yellow-300 cursor-pointer transition-colors"
+                  className="py-1 px-2 hover:bg-yellow-300 cursor-pointer transition-colors"
                 >
                   {ins}
                 </li>
@@ -140,7 +157,7 @@ function SearchDiv() {
           </div>
         )}
       </div>
-
+  
       <div className="h-8 md:absolute md:right-0 md:top-0 md:h-full md:w-16 w-full">
         <button className="bg-yellow-300 h-full w-full flex justify-center items-center">
           <i className="bi bi-search"></i>
@@ -148,6 +165,8 @@ function SearchDiv() {
       </div>
     </div>
   );
+  
+  
 }
 
 export default SearchDiv;

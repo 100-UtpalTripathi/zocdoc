@@ -7,7 +7,7 @@ import Aetna from "../assets/aetna.svg";
 
 function Insurance() {
   return (
-    <div className="p-16">
+    <div className="p-16 relative">
       <p className="text-3xl text-gray-800 font-normal ml-4">
         Find an in-network doctor from over 1,000 insurance plans
       </p>

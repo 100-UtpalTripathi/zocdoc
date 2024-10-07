@@ -10,7 +10,7 @@ function Services() {
         Let’s get you a doc who gets you
       </h2>
 
-      <div className="flex mt-28 gap-12 justify-around">
+      <div className="flex flex-wrap md:flex-nowrap mt-28 gap-12 justify-around">
         <div className="flex flex-col items-center p-6 rounded-lg w-full bg-white">
           <div className="w-46 h-50 relative -top-24   flex items-center justify-center">
             <img

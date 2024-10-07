@@ -11,7 +11,7 @@ function TopSearchedSpecialities() {
     <div className="px-16">
       <h2 className="text-2xl font-normal mb-4">Top-searched specialities</h2>
 
-      <div className="flex mt-8 gap-8 justify-around">
+      <div className="flex flex-wrap md:flex-nowrap mt-8 gap-8 justify-around">
 
         <div className="flex flex-col items-center p-6 bg-[#fef0bb] rounded-lg w-full">
           <div className="w-24 h-24 rounded-full border border-gray-200 overflow-hidden flex items-center justify-center">

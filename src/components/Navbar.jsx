@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="py-4 border-none bg-[#fcfbef] shadow-md ">
+    <nav className="py-4 border-none bg-[#fcfbef] shadow-md relative">
       <div className="container mx-auto flex justify-between items-center border-none relative">
         {/* Hamburger Icon for Mobile */}
         <div className="md:hidden">
